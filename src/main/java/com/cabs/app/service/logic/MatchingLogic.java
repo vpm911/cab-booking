@@ -10,6 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
+/**
+ * Takes in strategy name and invokes the respective strategy
+ */
 @Component
 public class MatchingLogic {
 

@@ -5,15 +5,15 @@ import com.cabs.app.model.Cab;
 import com.cabs.app.repo.CabRepo;
 import com.cabs.app.rest.dto.BookingRequestDto;
 import com.cabs.app.state.CabState;
-import org.hibernate.internal.util.compare.CalendarComparator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
-
+/**
+ * This strategy looks for same location, most idle and then random cabs.
+ */
 @Component("locationIdleRandomStrategy")
 public class LocationIdleRandomStrategy implements MatchingStrategy {
 

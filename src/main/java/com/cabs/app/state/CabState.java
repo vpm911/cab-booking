@@ -1,5 +1,8 @@
 package com.cabs.app.state;
 
+/**
+ * This represents a state machine to toggle states between ON_TRIP and IDLE
+ */
 public enum CabState {
 
     IDLE {

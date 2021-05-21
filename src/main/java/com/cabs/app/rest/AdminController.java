@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 
+/**
+ * Admin related API
+ */
 @Validated
 @RestController
 @RequestMapping("/admin")
@@ -38,7 +41,7 @@ public class AdminController {
         GetCabStatusDto response = adminService.getCabStatusById(cabId);
         return ResponseEntity.ok().body(response);
     }
-    
+
     @PostMapping("/cab/status")
     public ResponseEntity<Object> updateStatus(@RequestBody @Valid UpdateCabStatusDto updateCabStatusDto) {
         adminService.updateCabStatusAndCity(updateCabStatusDto);
