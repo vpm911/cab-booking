@@ -10,6 +10,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.time.Instant;
+import java.util.List;
 
 @Entity
 @Data
@@ -33,6 +34,9 @@ public class Cab {
     @ManyToOne
     @NotNull
     City currentCity;
+
+    @OneToMany(mappedBy = "cab")
+    List<Booking> bookingHistory;
 
 
 }

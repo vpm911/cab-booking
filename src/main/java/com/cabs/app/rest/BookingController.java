@@ -15,7 +15,7 @@ public class BookingController {
     @Autowired
     BookingService bookingService;
 
-    @PostMapping
+    @PostMapping("/book")
     public ResponseEntity<Object> requestCab(@RequestBody BookingRequestDto dto) {
         BookingResponseDto responseDto = bookingService.bookCab(dto);
         return ResponseEntity.ok().body(responseDto);

@@ -19,16 +19,15 @@ public class Booking {
     Long id;
 
     @NotNull
-    @OneToOne
+    @ManyToOne
     Cab cab;
 
     @NotNull
-    @OneToOne
+    @ManyToOne
     Customer customer;
 
     @NotNull
     Instant startTime;
 
-    @NotNull
     Instant endTime;
 }
