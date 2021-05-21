@@ -12,7 +12,7 @@ import java.time.Instant;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Bookings {
+public class Booking {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

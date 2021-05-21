@@ -5,4 +5,5 @@ import lombok.Data;
 @Data
 public class BookingRequestDto {
     String fromCity;
+    Long customerId;
 }
