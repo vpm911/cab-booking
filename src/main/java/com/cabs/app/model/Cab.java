@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.time.Instant;
 
 @Entity
@@ -24,6 +25,7 @@ public class Cab {
     Instant lastOnTrip;
 
     @ManyToOne
+    @NotNull
     City currentCity;
 
 
