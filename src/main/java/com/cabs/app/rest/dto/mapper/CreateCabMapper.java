@@ -14,6 +14,7 @@ public class CreateCabMapper{
 
     public Cab toEntity(CreateCabDto cabDto) {
         Cab cab = new Cab();
+        cab.setLicenseNumber(cabDto.getLicenseNumber());
         cab.setCurrentCity(cityRepo.findByName(cabDto.getCurrentCity()).get());
         return cab;
     }
