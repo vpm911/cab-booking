@@ -136,6 +136,55 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Idle Hours By CabId between time",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/insights/idleTime/1?from=2021-05-20T00:00:00.00Z&to=2021-05-21T00:00:00.00Z",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insights",
+						"idleTime",
+						"1"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2021-05-20T00:00:00.00Z"
+						},
+						{
+							"key": "to",
+							"value": "2021-05-21T00:00:00.00Z"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Complete trip",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/completeTrip/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"completeTrip",
+						"6"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
